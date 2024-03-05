@@ -38,6 +38,11 @@ public class User implements UserDetails {
     inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
+   @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,
+            CascadeType.PERSIST,CascadeType.REFRESH})
+   @JoinColumn(name = "user_id")
+   private Category category;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
