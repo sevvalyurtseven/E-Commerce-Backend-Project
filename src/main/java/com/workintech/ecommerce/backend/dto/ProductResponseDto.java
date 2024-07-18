@@ -7,8 +7,8 @@ public record ProductResponseDto( Long id,
                                   Integer stock,
                                   Double rating,
                                   Integer sell_count,
-                                  String images,
-                                  Long store_id,
-                                  Long category_id
+                                  //String images,
+                                  //Long store_id,
+                                  Long categoryId
 ) {
 }

@@ -6,7 +6,7 @@ import com.workintech.ecommerce.backend.entity.Product;
 import java.util.List;
 
 public interface ProductService {
-    List<Product> findAll();
+    List<ProductResponseDto> findAll();
 
     Product findById(Long id);
 

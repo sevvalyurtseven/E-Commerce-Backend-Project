@@ -35,12 +35,12 @@ public class Product {
     @Column(name = "sell_count")
     private Integer sellCount;
 
-    @Column(name = "images")
-    private String[] images;
+    //@Column(name = "images")
+    //private String images;
 
-    @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
-    @JoinColumn(name = "store_id")
-    private Store store;
+    //@ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH})
+    //@JoinColumn(name = "store_id")
+    //private Store store;
 
     @ManyToOne(cascade = {CascadeType.DETACH,CascadeType.MERGE,
             CascadeType.PERSIST,CascadeType.REFRESH})
